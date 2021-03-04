@@ -1,0 +1,151 @@
+/* select tag */
+.tm-select-group .tm-select {
+    width: 1px;
+    position: absolute;
+    left: -1000px
+}
+.tm-select-group .tm-select-container {
+    width: 100%;
+    padding: 10px 20px;
+    color: #495057;
+    background-color: #FFFFFF;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    box-sizing: border-box
+}
+.tm-select-group .tm-select-container:focus {
+    border-color: #2862a4
+}
+/* select head */
+.tm-select-group .tm-select-head {
+    padding: 0 26px 0 0;
+    position: relative;
+}
+/* select head empty */
+.tm-select-group .tm-select-empty {
+    width: 0;
+    height: 20px;
+    display: inline-block
+}
+/* select placeholder */
+.tm-select-group .tm-select-placeholder {
+    display: none
+}
+/* select icons */
+.tm-select-group .tm-select-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer
+}
+/* select button close */
+.tm-select-group .tm-select-close {
+    display: none
+}
+/* select options list */
+.tm-select-group .tm-options {
+    max-height: 160px;
+    margin: 12px 0 0 0;
+    overflow-y: auto;
+    display: none
+}
+/* select options scrollbar */
+.tm-select-group .tm-options::-webkit-scrollbar {
+    width: 2px;
+    height: 2px
+}
+.tm-select-group .tm-options::-webkit-scrollbar-button:start:decrement,
+.tm-select-group .tm-options::-webkit-scrollbar-button:end:increment {
+    height: 0;
+    background-color: transparent;
+    display: block
+}
+.tm-select-group .tm-options::-webkit-scrollbar-track-piece {
+    background-color: #CDD5DB;
+    -webkit-border-radius: 0;
+    -webkit-border-bottom-right-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px
+}
+.tm-select-group .tm-options::-webkit-scrollbar-thumb:vertical {
+    height: 50px;
+    background-color: #2862A4;
+    -webkit-border-radius: 2px
+}
+/* select options item */
+.tm-select-group .tm-options-group-item {
+    color: #1B1B1B;
+    cursor: pointer
+}
+.tm-select-group .tm-options-group-item span {
+    padding: 0 15px 0 0;
+    display: inline-block;
+    position: relative
+}
+.tm-select-group .tm-options-group-item span::after {
+    content: '';
+    width: 10px;
+    height: 8px;
+    background: url('./imgs/tm-select-added-icon.svg') 50% 50%;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none
+}
+.tm-select-group .tm-options-group-item span.selected {
+    font-weight: 600
+}
+.tm-select-group .tm-options-group-item span.selected::after {
+    display: block
+}
+/* select selected item */
+.tm-select-group .tm-selected-item {
+    margin: 0 10px 2px 0;
+    padding: 4px 22px 4px 8px;
+    color: #2862A4;
+    background-color:  rgba(40, 98, 164, .11);
+    border-radius: 4px;
+    display: inline-block;
+    position: relative
+}
+.tm-select-group .tm-selected-item img {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+    cursor: pointer
+}
+
+
+
+/* select head (on focus) */
+.tm-select-group .tm-custom-select.focus .tm-select-head {
+    padding: 0 26px 8px 0;
+    border-bottom: 1px solid #CDD5DB
+}
+/* select button open (on focus) */
+.tm-select-group .tm-custom-select.focus .tm-select-open {
+    display: none
+}
+/* select button close (on focus) */
+.tm-select-group .tm-custom-select.focus .tm-select-close {
+    display: block
+}
+/* select options (on focus) */
+.tm-select-group .tm-custom-select.focus .tm-options {
+    display: block
+}
+
+
+
+/* select placeholde (on has-placeholder)r */
+.tm-select-group .tm-custom-select.has-placeholder .tm-select-placeholder {
+    display: inline-block
+}
+

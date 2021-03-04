@@ -4,9 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>tm-custom-multy-select</title>
+    <link rel="stylesheet" href="./main.css">
+    <script defer src="./main.js"></script>
 </head>
 <body>
-    Hi
+
+    <div class="tm-select-group">
+        <label for="select0">Alredy has options</label>
+        <select class="tm-select" id="select0" multiple>
+            <option selected value="1">Item 1</option>
+            <option selected value="2">Item 2</option>
+            <option selected value="3">Item 3</option>
+        </select>
+        <div class="tm-custom-select has-placeholder">
+            <div class="tm-select-container">
+                <div class="tm-select-head">
+                    <div class="tm-select-empty"></div>
+                    <div class="tm-select-placeholder">Placeholder</div>
+                    <img src="./imgs/tm-select-open-icon.svg" class="tm-select-icon tm-select-open" alt="Open">
+                    <img src="./imgs/tm-select-close-icon.svg" class="tm-select-icon tm-select-close" alt="Close">
+                </div>
+                <div class="tm-options">
+                    <div class="tm-options-group-item"><span data-index="1">Item 1</span></div>
+                    <div class="tm-options-group-item"><span data-index="2">Item 2</span></div>
+                    <div class="tm-options-group-item"><span data-index="3">Item 3</span></div>
+                    <div class="tm-options-group-item"><span data-index="4">Item 4</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tm-select-group">
+        <label for="select1">Has no options</label>
+        <select class="tm-select" id="select1" multiple>
+        </select>
+        <div class="tm-custom-select has-placeholder">
+            <div class="tm-select-container">
+                <div class="tm-select-head">
+                    <div class="tm-select-empty"></div>
+                    <div class="tm-select-placeholder">Placeholder</div>
+                    <img src="./imgs/tm-select-open-icon.svg" class="tm-select-icon tm-select-open" alt="Open">
+                    <img src="./imgs/tm-select-close-icon.svg" class="tm-select-icon tm-select-close" alt="Close">
+                </div>
+                <div class="tm-options">
+                    <div class="tm-options-group-item"><span data-index="1">Item 1</span></div>
+                    <div class="tm-options-group-item"><span data-index="2">Item 2</span></div>
+                    <div class="tm-options-group-item"><span data-index="3">Item 3</span></div>
+                    <div class="tm-options-group-item"><span data-index="4">Item 4</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tm-select-group">
+        <label for="select2">Has no options</label>
+        <select class="tm-select" id="select2" multiple>
+        </select>
+        <div class="tm-custom-select has-placeholder">
+            <div class="tm-select-container">
+                <div class="tm-select-head">
+                    <div class="tm-select-empty"></div>
+                    <div class="tm-select-placeholder">Placeholder</div>
+                    <img src="./imgs/tm-select-open-icon.svg" class="tm-select-icon tm-select-open" alt="Open">
+                    <img src="./imgs/tm-select-close-icon.svg" class="tm-select-icon tm-select-close" alt="Close">
+                </div>
+                <div class="tm-options">
+                    <div class="tm-options-group-item"><span data-index="1">Item 1</span></div>
+                    <div class="tm-options-group-item"><span data-index="2">Item 2</span></div>
+                    <div class="tm-options-group-item"><span data-index="3">Item 3</span></div>
+                    <div class="tm-options-group-item"><span data-index="4">Item 4</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
