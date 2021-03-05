@@ -104,18 +104,20 @@ let CustomGroups =  {
                 console.log(e);
                 console.log(e.currentTarget);
                 console.log(e.currentTarget.closest('.tm-select-group'));
-                let index = e.currentTarget.closest('.tm-selected-item').dataset.index,
-                selectId = e.currentTarget.closest('.tm-select-group').querySelector('.tm-select').getAttribute('id');
-                // remove from select
-                e.currentTarget.closest('.tm-select-group').querySelector('option[value="'+ index +'"]').remove();
-                // remove from array
-                this.values[selectId].splice(this.values[selectId].indexOf(index), 1);
-                // remove active class in list
-                e.currentTarget.closest('.tm-select-group').querySelector('.tm-options-group-item span[data-index="'+ index +'"]').classList.remove('selected');
-                // remove custom item
-                e.currentTarget.closest('.tm-selected-item').remove();
-                this.checkItems();
-                console.log(this.values);
+                if( e.currentTarget.closest('.tm-select-group') != null ) {
+                    let index = e.currentTarget.closest('.tm-selected-item').dataset.index,
+                    selectId = e.currentTarget.closest('.tm-select-group').querySelector('.tm-select').getAttribute('id');
+                    // remove from select
+                    e.currentTarget.closest('.tm-select-group').querySelector('option[value="'+ index +'"]').remove();
+                    // remove from array
+                    this.values[selectId].splice(this.values[selectId].indexOf(index), 1);
+                    // remove active class in list
+                    e.currentTarget.closest('.tm-select-group').querySelector('.tm-options-group-item span[data-index="'+ index +'"]').classList.remove('selected');
+                    // remove custom item
+                    e.currentTarget.closest('.tm-selected-item').remove();
+                    this.checkItems();
+                    console.log(this.values);
+                }
             });
         });
     },
